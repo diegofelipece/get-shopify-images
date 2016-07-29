@@ -22,7 +22,7 @@ So you can start cloning the repositpory, moving to the folder and than installi
 
 ```
 
-So now you just need to replace the config files on **index.js* with your settings
+So now you just need to replace the config files on **index.js** with your settings
 
 ``` js
 var key = '', //add your key
