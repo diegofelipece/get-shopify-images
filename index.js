@@ -5,12 +5,12 @@ const fs = require('fs');
 const download = require('download');
 
 var key = '', //add your key
-		secret = '', //add your secret
-		store = '', //add your store slug on Shopify
-		limit = 10, //define how many products the API will show for page
-		fields = '?fields=title,images&limit='+limit,
-		page = '&page=',
-		pathToSave = ''; //your local path like /Users/dev/my-store
+	secret = '', //add your secret
+	store = '', //add your store slug on Shopify
+	limit = 10, //define how many products the API will show for page
+	fields = '?fields=title,images&limit='+limit,
+	page = '&page=',
+	pathToSave = ''; //your local path like /Users/dev/my-store
 
 var urlCount = 'https://'+key+':'+secret+'@'+store+'.myshopify.com/admin/products/count.json';
 var urlProducts = 'https://'+key+':'+secret+'@'+store+'.myshopify.com/admin/products.json'+fields+page;
