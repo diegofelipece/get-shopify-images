@@ -8,9 +8,10 @@ var key = '', //add your key
 	secret = '', //add your secret
 	store = '', //add your store slug on Shopify
 	limit = 10, //define how many products the API will show for page
-	fields = '?fields=title,images&limit='+limit,
-	page = '&page=',
 	pathToSave = ''; //your local path like /Users/dev/my-store
+
+var fields = '?fields=title,images&limit='+limit,
+	page = '&page=';
 
 var urlCount = 'https://'+key+':'+secret+'@'+store+'.myshopify.com/admin/products/count.json';
 var urlProducts = 'https://'+key+':'+secret+'@'+store+'.myshopify.com/admin/products.json'+fields+page;
@@ -54,9 +55,9 @@ function removeParam(key, sourceURL) {
 	return rtn;
 }
 
-function getImages(url){
+function getImages(url, page){
 
-	getJSON(url, function(error, response){
+	getJSON(url+page, function(error, response){
 
 	    error
 	    // undefined
