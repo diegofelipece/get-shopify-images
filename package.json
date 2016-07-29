@@ -1,0 +1,15 @@
+{
+  "name": "get-shopify-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "download": "^5.0.2",
+    "get-json": "0.0.3"
+  }
+}
